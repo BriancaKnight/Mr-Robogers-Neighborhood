@@ -1,10 +1,11 @@
 function beepBoop(number) {
   if (number < 0) {
-    return "Please enter a number greater than 0"
+    return "Please enter a number greater than 0";
   }
 
   let result = [];
-  for (let i = 0; i <= number; i++) {
+  const numberString = number.toString();
+  for (let i = 0; i <= numberString; i++) {
     if (i === 1) {
       result.push("Beep!");
     } else if (i === 2) {
@@ -12,9 +13,8 @@ function beepBoop(number) {
     } else if (i === 3) {
       result.push("Won't you be my neighbor?");
     } else {
-      result.push(String(i));
+      result.push(i.toString());
     }
   }
   return result;
-}
-
+  }
