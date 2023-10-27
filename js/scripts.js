@@ -12,7 +12,7 @@ function beepBoop(number) {
     } else if (i === 3) {
       result.push("Won't you be my neighbor?");
     } else {
-      result.push(i);
+      result.push(String(i));
     }
   }
   return result;
