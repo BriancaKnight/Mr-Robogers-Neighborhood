@@ -4,16 +4,17 @@ function beepBoop(number) {
   }
 
   let result = [];
-  const numberString = number.toString();
-  for (let i = 0; i <= numberString; i++) {
-    if (i === 1) {
+  for (let i = 0; i <= number; i++) {
+    let numberString = i.toString();
+
+    if (numberString.includes(1)) {
       result.push("Beep!");
-    } else if (i === 2) {
+    } else if (numberString.includes(2)) {
       result.push("Boop!");
-    } else if (i === 3) {
+    } else if (numberString.includes(3)) {
       result.push("Won't you be my neighbor?");
     } else {
-      result.push(i.toString());
+      result.push(i);
     }
   }
   return result;
