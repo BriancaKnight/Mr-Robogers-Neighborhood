@@ -4,9 +4,10 @@ function beepBoop(number) {
   }
   let result = [];
   for (let i= 0; i <= number; i ++ ) {
-    if (i === 1 || i === 10 || i === 11 || i === 100) {
-      result.push("beep");
-    } else {
+    if (i === 1) {
+      result.push("Beep!");
+    }
+     else {
     result.push(i);
   }
 }
