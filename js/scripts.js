@@ -9,10 +9,10 @@ function beepBoop(number) {
 
     if (numberString.includes(3)) {
       result.push("Won't you be my neighbor?");
+    } else if (numberString.includes(2)) {
+      result.push("Boop!");
     } else if (numberString.includes(1)) {
       result.push("Beep!");
-    } else if (numberString === "2") {
-      result.push("Boop!");
     } else {
       result.push(i);
     }
