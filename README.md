@@ -1,3 +1,37 @@
+# Mr. Roger's Neighborhood
+
+#### By Brianca Knight
+
+#### A interface for Mr. Roger's Neighborhood's code translation. 
+
+## Technologies Used
+
+* HTML
+* JavaScript
+* CSS
+
+## Description
+
+This simple browser aplication translates Mr. Roger's Neighborhood's secret code for the user. Simply enter a number more than 0 and the results will be displayed! 
+
+## Setup/Installation Requirements
+
+* Clone this repository to your desktop.
+* Navigate to the top level of the directory.
+* Open index.html
+
+## Known Bugs
+
+* None.
+
+## License
+
+MIT
+
+Copyright (c) 2023 Brianca Knight
+
+## TDD
+
 Describe: beepBoop()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
