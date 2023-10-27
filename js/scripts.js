@@ -1,3 +1,9 @@
+// Buisness Logic
+
+window.addEventListener("load", function () {
+  document.getElementById("userNumber").addEventListener("submit", beepBoop);
+});
+
 function beepBoop(number) {
   if (number < 0) {
     return "Please enter a number greater than 0";
@@ -18,4 +24,12 @@ function beepBoop(number) {
     }
   }
   return result;
-  }
+}
+
+// User Interface Logic
+
+function getNumber(e) {
+  e.preventDefault();
+  let number = document.getElementById("numberInput");
+}
+
