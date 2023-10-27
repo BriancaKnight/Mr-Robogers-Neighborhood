@@ -1,10 +1,9 @@
 // Buisness Logic
 
 function beepBoop(number) {
-  if (number < 0) {
-    return "Please enter a number greater than 0";
+  if ((isNaN(number) || number < 0) || number > 99999) {
+    return "Please enter a number between 0 and 99999";
   }
-
   let result = [];
   for (let i = 0; i <= number; i++) {
     let numberString = i.toString();
@@ -29,9 +28,15 @@ window.addEventListener("load", function () {
     e.preventDefault();
     let number = document.getElementById("numberInput").value;
     number = parseInt(number);
+    let resultDisplay = document.getElementById("displayResults");
+    let errorDisplay = document.getElementById("displayError");
+
     let result = beepBoop(number);
 
-    let resultDisplay = document.getElementById("displayResults");
+    if (result === "Please enter a number between 0 and 99999") {
+      errorDisplay.innerText = result;
+    } else {
     resultDisplay.innerText = result.join(" ");
+    }
   });
 });
