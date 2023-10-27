@@ -30,7 +30,7 @@ MIT
 
 Copyright (c) 2023 Brianca Knight
 
-## TDD
+## Tests
 
 Describe: beepBoop()
 

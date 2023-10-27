@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
   const numberInput = document.getElementById("numberInput");
   const resultDisplay = document.getElementById("displayResults");
   const errorDisplay = document.getElementById("displayError");
-
+  const userResultDiv = document.getElementById("userResults");
 
   document.getElementById("userNumber").addEventListener("submit", function (e) {
     e.preventDefault();
@@ -40,6 +40,7 @@ window.addEventListener("load", function () {
     } else {
       resultDisplay.innerText = result.join(", ");
       errorDisplay.innerText = "";
+      userResultDiv.classList.remove("hidden");
     }
   });
 });
