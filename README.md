@@ -6,7 +6,7 @@ Expected Output: [0]
 
 Test: "It should replace number "1" with "Beep"
 Code: beepBoop(1)
-Expected Output: [0,"Beep"]
+Expected Output: [0, "Beep"]
 
 Test: "It should replace number "2" with "Boop"
 Code: beepBoop(2)
