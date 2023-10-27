@@ -7,12 +7,12 @@ function beepBoop(number) {
   for (let i = 0; i <= number; i++) {
     let numberString = i.toString();
 
-    if (numberString.includes(1)) {
+    if (numberString.includes(3)) {
+      result.push("Won't you be my neighbor?");
+    } else if (numberString.includes(1)) {
       result.push("Beep!");
     } else if (numberString === "2") {
       result.push("Boop!");
-    } else if (numberString === "3") {
-      result.push("Won't you be my neighbor?");
     } else {
       result.push(i);
     }
